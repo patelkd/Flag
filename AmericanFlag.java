@@ -18,20 +18,24 @@ public class AmericanFlag {
 			this.width = width;
 		}
 	}
-	public void setLength(int heigh) {
+	public void setLength(int height) {
 		if (height>0) {
 			this.height = height;
 		}
 	}
 
 
-	public void draw(int length, int width, Graphics g) {
-		g.setColor(Color.red);
-		g.fillRect(0, 0, width, height);
+	public void draw(Graphics g) {
+		draw.drawLongRectangle();
+		draw.drawUnion();
+	}
+
+	public static void main(String[] args) {
+		Draw draw = new draw();
 	}
 	
 }
 
 //stripe.draw
-one fill rect
-each object should be able to draw itself
+// one fill rect
+// each object should be able to draw itself
